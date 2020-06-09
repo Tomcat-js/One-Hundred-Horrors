@@ -35,15 +35,15 @@ const searchFunction = function() {
 
             let article = document.createElement('article');
             article.className = "TV";
+            article.id = i
 
         
             if (counter % moduloCount === 0) {
                 article.style.backgroundImage = TVbackgrounds[TVbackgroundCount];
             } else {
-                article.className = "test"
+                article.style.backgroundImage = TVbackgrounds[5];
             }
-  
-     
+            
             
             let img = document.createElement('img');
             
@@ -61,13 +61,32 @@ const searchFunction = function() {
             }
 
             counter ++
-            clickTest = function() {
-                console.log("clicked")
-            }
-            let test = document.querySelector(".test")
-            test.addEventListener('click', clickTest)
       
         }
+
+        
+
+        var vol = new Tone.Volume(-12).toMaster();
+        var reverb = new Tone.Freeverb(0.7).connect(vol);
+        var pingPong = new Tone.PingPongDelay("4n", 0.80).connect(reverb);
+        
+        let randomNotes = ["C4", "Eb4", "G4"]
+
+        const makeASound = () => {
+            const synth = new Tone.Synth().connect(pingPong);
+            synth.triggerAttackRelease(randomNotes[Math.floor(Math.random() * 3)], "8n");
+            Tone.start()
+        }
+
+        
+
+        for (let index = 0; index < 3; index++) {
+            var TVid = document.getElementById(index);
+            TVid.addEventListener('click', makeASound)
+        }
+
+       
+        
         
     })  
     
@@ -81,11 +100,23 @@ searchFunction()
 
 
 
-
-
-
 // if (counter % moduloCount === 0) {
 //     article.style.backgroundImage = TVbackgrounds[TVbackgroundCount];
 // } else {
 //     article.style.backgroundImage = TVbackgrounds[5];
 // }
+
+
+
+// var vol = new Tone.Volume(-12).toMaster();
+// var reverb = new Tone.Freeverb(0.7).connect(vol);
+// var pingPong = new Tone.PingPongDelay("4n", 0.80).connect(reverb);
+
+
+// const makeASound = () => {
+//     const synth = new Tone.Synth().connect(pingPong);
+//     synth.triggerAttackRelease("C4", "8n");
+//     Tone.start()
+// }
+// var three = document.getElementById("3");
+// three.addEventListener('click', makeASound)
