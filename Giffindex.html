@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giphy</title>
+  <style>
+    html {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    form * {
+      font-size: inherit;
+    }
+    .display {
+      margin: auto;
+      width: 60%;
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    .continue {
+      display: none;
+    }
+    .revealContinueBtn {
+      display: block;
+      width: 15%;
+      margin: 0 auto;
+      padding: 1%;
+      font-size: inherit;
+    }
+    .form_div {
+      text-align: center;
+    }
+    body {
+      background-color: #faf2f2;
+    }
+    input[type=text] {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid gray;
+      border-radius: 4px;
+    }
+    button {
+      width: 10%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid gray;
+      border-radius: 4px;
+    }
+    </style>
+</head>
+<body>
+    <div class="form_div">
+      <form action="">
+          <input type="text">
+          <button>Search</button>
+      </form>
+    </div>
+
+      <div class="display"></div>
+      <button class="continue">Continue?</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="infiniteGiphy.js"></script>
+</body>
+</html>
