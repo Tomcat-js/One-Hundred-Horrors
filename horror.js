@@ -73,10 +73,10 @@ const searchFunction = function() {
             "kick": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/kick.mp3", 
             "snare": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/snare.mp3", 
             "hihat": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/hh.mp3", 
-            "halloweenOne": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloweenOne.mp3"
+            "halloween": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloween.mp3"
           
           });
-        let soundList = ["halloweenOne",  "halloweenOne", "hihat", "F4", "G4", "A4", "B4", "C5"]
+        let soundList = ["halloween",  "halloween", "hihat", "F4", "G4", "A4", "B4", "C5"]
         
         
         let noteCounter = 0
