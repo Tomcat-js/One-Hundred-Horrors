@@ -65,22 +65,45 @@ const searchFunction = function() {
         }
 
         
+        
+
+        //   p1.get('hihat').start();
+        //   if ([0, 4, 8, 12].indexOf(idx) >= 0) {
+        //     p1.get('kick').start();
+        //   }
 
         var vol = new Tone.Volume(-12).toMaster();
-        var reverb = new Tone.Freeverb(0.7).connect(vol);
-        var pingPong = new Tone.PingPongDelay("4n", 0.80).connect(reverb);
+        // var reverb = new Tone.Freeverb(0.7).connect(vol);
+   
+        // var pingPong = new Tone.PingPongDelay("4n", 0.80).connect(reverb);
         
-        let randomNotes = ["C4", "Eb4", "G4"]
+        // let randomNotes = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"]
+        // let noteCounter = 0
+        // const makeASound = () => {
+        //     const synth = new Tone.Synth().connect(reverb);
+        //     synth.triggerAttackRelease(randomNotes[noteCounter], "8n");
+        //     noteCounter ++;
+        //     Tone.start()
+        // }
+        var p1 = new Tone.Players({
+            "kick": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/kick.mp3", 
+            "snare": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/snare.mp3", 
+            "hihat": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/hh.mp3", 
+          
+          }, function() {
+            //consoile.log(loaded)
+          });
+        let randomNotes = ["kick",  "snare", "hihat", "F4", "G4", "A4", "B4", "C5"]
+        let noteCounter = 0
 
+        p1.connect(vol);
         const makeASound = () => {
-            const synth = new Tone.Synth().connect(pingPong);
-            synth.triggerAttackRelease(randomNotes[Math.floor(Math.random() * 3)], "8n");
-            Tone.start()
+            p1.get(randomNotes[noteCounter]).start();
+            noteCounter ++;
+            // Tone.start()
         }
 
-        
-
-        for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 10; index++) {
             var TVid = document.getElementById(index);
             TVid.addEventListener('click', makeASound)
         }
