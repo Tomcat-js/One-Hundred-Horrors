@@ -89,11 +89,12 @@ const searchFunction = function() {
             "kick": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/kick.mp3", 
             "snare": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/snare.mp3", 
             "hihat": "https://cdn.jsdelivr.net/gh/Tonejs/Tone.js/examples/audio/505/hh.mp3", 
+            "halloweenOne": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloweenOne.mp3"
           
           }, function() {
             //consoile.log(loaded)
           });
-        let randomNotes = ["kick",  "snare", "hihat", "F4", "G4", "A4", "B4", "C5"]
+        let randomNotes = ["halloweenOne",  "halloweenOne", "hihat", "F4", "G4", "A4", "B4", "C5"]
         let noteCounter = 0
 
         p1.connect(vol);
