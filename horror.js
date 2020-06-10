@@ -21,7 +21,9 @@ const searchFunction = function() {
             "url('./images/TVten.png')",
             "url('./images/TVeleven.png')",
             "url('./images/TVtwelve.png')",
-            "url('./images/TVthirteen.png')"
+            "url('./images/TVthirteen.png')",
+            "url('./images/TVfourteen.png')",
+            "url('./images/TVfifteen.png')"
         ]
         let counter = 0;
         let moduloCount = 0;
@@ -56,7 +58,7 @@ const searchFunction = function() {
             moduloCount ++
             TVbackgroundCount ++
 
-            if (TVbackgroundCount > 12) {
+            if (TVbackgroundCount > 14) {
                 TVbackgroundCount = 0
             }
 
@@ -189,12 +191,19 @@ const searchFunction = function() {
         for (let index = 0; index < 100; index++) {
                 let TVid = document.getElementById(index);
                 TVid.addEventListener('click', makeASound)  
-        }
-
-       
-        
+        }  
         
     })  
+
+    const allstatic = function  () {
+        document.querySelector('body').innerHTML = ""
+    }
+
+    setTimeout(function(){ 
+        
+        allstatic()
+
+     }, 3000);
     
 }
 
@@ -206,23 +215,3 @@ searchFunction()
 
 
 
-// if (counter % moduloCount === 0) {
-//     article.style.backgroundImage = TVbackgrounds[TVbackgroundCount];
-// } else {
-//     article.style.backgroundImage = TVbackgrounds[5];
-// }
-
-
-
-// var vol = new Tone.Volume(-12).toMaster();
-// var reverb = new Tone.Freeverb(0.7).connect(vol);
-// var pingPong = new Tone.PingPongDelay("4n", 0.80).connect(reverb);
-
-
-// const makeASound = () => {
-//     const synth = new Tone.Synth().connect(pingPong);
-//     synth.triggerAttackRelease("C4", "8n");
-//     Tone.start()
-// }
-// var three = document.getElementById("3");
-// three.addEventListener('click', makeASound)
