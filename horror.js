@@ -70,10 +70,10 @@ const searchFunction = function() {
         var vol = new Tone.Volume(-12).toMaster();
 
         var samples = new Tone.Players({
-            "halloween": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloween.mp3",
-            "halloween2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloweenTwo.mp3",
-            "halloween3": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloweenThree.mp3",
-            "halloween4": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/halloweenFour.mp3",
+            "halloween": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall.mp3",
+            "halloween2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall2.mp3",
+            "halloween3": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall3.mp3",
+            "halloween4": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall4.mp3",
           
           });
         let soundList = ["halloween",  "halloween2", "halloween3", "halloween4", "G4", "A4", "B4", "C5"]
