@@ -92,6 +92,12 @@ const searchFunction = function() {
             "violin": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/violin.mp3",
             "violinPlucks": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/violin_plucks.mp3",
             "witch": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/witch.mp3",
+            "bassWalk": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/bassWalk.mp3",
+            "guitar": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/guitar.mp3",
+            "helpMe": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/helpMe.mp3",
+            "laugh": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/laugh.mp3",
+            "shimmers": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/shimmers.mp3",
+            "squelch": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/squelch.mp3",
           
           });
         let soundList = [
@@ -99,16 +105,21 @@ const searchFunction = function() {
             "halloween",
             "ambience", 
             "halloween2", 
-            "halloween3", 
+            "halloween3",
+            "squelch",   
             "halloween4", 
             "delayBass",
             "scream", 
-            "horror3", 
+            "horror3",
+            "helpMe",
+            "shimmers", 
             "scream2", 
             "bell",
+            "laugh", 
             "horror",
             "delayBass2", 
             "child", 
+            "violinPlucks",
             "ghostScream",
             "horror2", 
             "delayBass3",
@@ -116,7 +127,7 @@ const searchFunction = function() {
             "horror4",
             "witch",  
             "horror5", 
-            "violinPlucks",  
+            "guitar",  
         ]
         
         
