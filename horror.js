@@ -75,18 +75,31 @@ const searchFunction = function() {
             "halloween3": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall3.mp3",
             "halloween4": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall4.mp3",
             "scream": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/scream.mp3",
-            "scream2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/scream2.mp3"
+            "scream2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/scream2.mp3",
+            "ambience": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/ambience.mp3",
+            "ambience2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/ambience2.mp3",
+            "horror": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror.mp3",
+            "horror2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror2.mp3",
+            "horror3": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror3.mp3",
+            "horror4": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror4.mp3",
+            "horror5": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror5.mp3",
           
           });
         let soundList = [
+            "ambience2",
             "halloween",  
             "halloween2", 
             "halloween3", 
             "halloween4", 
             "scream", 
             "scream2", 
-            "B4", 
-            "C5"
+            "ambience",
+            "horror", 
+            "horror2", 
+            "horror3", 
+            "horror4", 
+            "horror5" 
+            
         ]
         
         
@@ -98,7 +111,7 @@ const searchFunction = function() {
             noteCounter ++;
         }
 
-        for (let index = 0; index < 10; index++) {
+        for (let index = 0; index < 100; index++) {
             var TVid = document.getElementById(index);
             TVid.addEventListener('click', makeASound)
         }
