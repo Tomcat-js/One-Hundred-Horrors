@@ -83,23 +83,40 @@ const searchFunction = function() {
             "horror3": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror3.mp3",
             "horror4": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror4.mp3",
             "horror5": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/horror5.mp3",
+            "delayBass": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/delayBass.mp3",
+            "delayBass2": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/delayBass2.mp3",
+            "delayBass3": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/delayBass3.mp3",
+            "ghostScream": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/ghostScream.mp3",
+            "bell": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/bell.mp3",
+            "child": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/child.mp3",
+            "violin": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/violin.mp3",
+            "violinPlucks": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/violin_plucks.mp3",
+            "witch": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/witch.mp3",
           
           });
         let soundList = [
             "ambience2",
-            "halloween",  
+            "halloween",
+            "ambience", 
             "halloween2", 
             "halloween3", 
             "halloween4", 
+            "delayBass",
             "scream", 
-            "scream2", 
-            "ambience",
-            "horror", 
-            "horror2", 
             "horror3", 
-            "horror4", 
-            "horror5" 
-            
+            "scream2", 
+            "bell",
+            "horror",
+            "delayBass2", 
+            "child", 
+            "ghostScream",
+            "horror2", 
+            "delayBass3",
+            "violin",  
+            "horror4",
+            "witch",  
+            "horror5", 
+            "violinPlucks",  
         ]
         
         
