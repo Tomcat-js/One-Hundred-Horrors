@@ -98,6 +98,11 @@ const searchFunction = function() {
             "laugh": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/laugh.mp3",
             "shimmers": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/shimmers.mp3",
             "squelch": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/squelch.mp3",
+            "hummer": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hummer.mp3",
+            "lowBlubble": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/lowBlubble.mp3",
+            "organ": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/organ.mp3",
+            "pianoSpasm": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/pianoSpasm.mp3",
+            "roar": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/roar.mp3"
           
           });
         let soundList = [
@@ -128,20 +133,62 @@ const searchFunction = function() {
             "witch",  
             "horror5", 
             "guitar",  
+            "hummer",  
+            "lowBlubble",  
+            "organ",  
+            "pianoSpasm",  
+            "roar"  
+        ]
+
+        let soundList2 = [
+            "ambience2",
+            "ambience", 
+            "squelch",   
+            "delayBass",
+            "scream", 
+            "horror3",
+            "helpMe",
+            "shimmers", 
+            "scream2", 
+            "bell",
+            "laugh", 
+            "horror",
+            "delayBass2", 
+            "child", 
+            "violinPlucks",
+            "ghostScream",
+            "horror2", 
+            "delayBass3",
+            "violin",  
+            "horror4",
+            "witch",  
+            "horror5", 
+            "guitar",  
+            "hummer",  
+            "lowBlubble",  
+            "organ",  
+            "pianoSpasm",  
+            "roar"  
         ]
         
         
         let noteCounter = 0
 
         samples.connect(vol);
+
         const makeASound = () => {
-            samples.get(soundList[noteCounter]).start();
-            noteCounter ++;
+
+            if (noteCounter < 32) {
+                samples.get(soundList[noteCounter]).start();
+                noteCounter ++;
+            } else {
+                samples.get(soundList2[Math.floor(Math.random() * 28)]).start();
+            }
         }
 
         for (let index = 0; index < 100; index++) {
-            var TVid = document.getElementById(index);
-            TVid.addEventListener('click', makeASound)
+                let TVid = document.getElementById(index);
+                TVid.addEventListener('click', makeASound)  
         }
 
        
