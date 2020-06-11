@@ -46,7 +46,6 @@ const searchFunction = function() {
                 article.style.backgroundImage = TVbackgrounds[5];
             }
             
-            
             let img = document.createElement('img');
             
             img.src = res.data.data[i].images.original_still.url;
@@ -63,12 +62,9 @@ const searchFunction = function() {
             }
 
             counter ++
-      
+     
         }
-
-        
-        
-
+     
         var vol = new Tone.Volume(-2).toMaster();
 
         var samples = new Tone.Players({
@@ -106,7 +102,8 @@ const searchFunction = function() {
             "pianoSpasm": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/pianoSpasm.mp3",
             "roar": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/roar.mp3"
           
-          });
+        });
+
         let soundList = [
             "ambience2",
             "halloween",
@@ -225,7 +222,7 @@ const searchFunction = function() {
             
             allstatic()
     
-         }, 70000);
+         }, 80000);
         
     })  
 
