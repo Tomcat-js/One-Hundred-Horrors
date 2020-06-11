@@ -1,5 +1,5 @@
 # One Hundred Horrors <hr /> 
-[Play Here](https://tomcat-js.github.io/Astronaughts-and-Holy-Crosses/)
+[See Here](https://tomcat-js.github.io/One-Hundred-Horrors/)
 
 ### Concept <hr /> 
  An interactive horror themed art installation.  
