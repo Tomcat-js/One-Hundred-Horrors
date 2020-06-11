@@ -1,6 +1,6 @@
 # One Hundred Horrors <hr /> 
 
-#### An interactive horror themed art installation.  [See Here](https://tomcat-js.github.io/One-Hundred-Horrors/)
+## An interactive horror themed art installation.  [See Here](https://tomcat-js.github.io/One-Hundred-Horrors/)
 
 ### Description <hr /> 
 One hundred still images from horror movies are selected at random from a loop making http requests to the Giphy API. When clicked on by a user a still image is replaced with a repeating gif of the same scene as if it has come to life. The click event also triggers an audio sample to play a haunting melody or terrifying sound effect to accompany the moving image. To create an element of surprise, the user experience time is limited by a set timeout event which clears the screen and presents a repeating background of black TVs flickering with static before cutting to black.      
