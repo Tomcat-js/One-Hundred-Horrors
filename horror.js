@@ -173,6 +173,7 @@ const searchFunction = function() {
             "roar"  
         ]
         
+
         
         let noteCounter = 0
 
@@ -192,18 +193,45 @@ const searchFunction = function() {
                 let TVid = document.getElementById(index);
                 TVid.addEventListener('click', makeASound)  
         }  
+
+        const endSample = new Tone.Players({
+            "end": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/end.mp3"
+        }) 
+        
+        fadeToBlack = function() {
+            let pageBody = document.querySelector('body')
+            pageBody.classList.remove("flickerTV");
+            pageBody.style.backgroundImage = 'none';
+            pageBody.style.backgroundColor = 'black';
+        }
+
+        const allstatic = function  () {
+            endSample.get('end').start()
+            let pageBody = document.querySelector('body');
+            pageBody.innerHTML = "";
+            pageBody.className = "flickerTV";
+            endSample.connect(vol);
+    
+            setTimeout(function(){ 
+                
+                fadeToBlack()
+        
+             }, 13500);
+        }
+        
+        endSample.connect(vol);
+    
+        setTimeout(function(){ 
+            
+            allstatic()
+    
+         }, 1 * 60 * 1000);
         
     })  
 
-    const allstatic = function  () {
-        document.querySelector('body').innerHTML = ""
-    }
+ 
 
-    setTimeout(function(){ 
-        
-        allstatic()
 
-     }, 3000);
     
 }
 

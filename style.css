@@ -11,23 +11,9 @@
 .TV {
     width: 100%;
     height: 200px;
-    /* background-image: url("./images/TVseven.png"); */
     background-size: 100% 100%;
 }
 
-/* .TVtwo {
-    width: 100%;
-    height: 400px;
-    background-image: url("./images/TVone_small.png");
-    background-size: 100% 100%;
-}
-
-.TVthree {
-    width: 100%;
-    height: 400px;
-    background-image: url("./images/TVone_small.png");
-    background-size: 100% 100%;
-} */
 
 img {
     width: 62%;
@@ -41,5 +27,77 @@ img {
 
 body {
     background-image: url("./images/TVstatic.png");
+    background-size: 17%; 
+}
+
+
+.flickerTV {
     background-size: 17%;
+    animation-name: flicker;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    perspective: 1000;
+    background-attachment: fixed;    
+}
+
+@keyframes flicker {
+    0% {background-image: url("./images/TVstatic.png");}
+    100% {background-image: url("./images/TVstatic2.png");}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-image: url("./images/TVstatic.png");
+        background-size: 33%;
+    }
+    
+    
+    .flickerTV {
+        background-size: 33%;
+        animation-name: flicker;
+        animation-duration: 0.01s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        perspective: 1000;
+        background-attachment: fixed;    
+    }
+    
+    @keyframes flicker {
+        0% {background-image: url("./images/TVstatic.png");}
+        100% {background-image: url("./images/TVstatic2.png");}
+    }      
+
+}
+
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+    body {
+        background-image: url("./images/TVstatic.png");
+        background-size: 100%;
+    }
+    
+    
+    .flickerTV {
+        background-size: 100%;
+        animation-name: flicker;
+        animation-duration: 0.01s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        perspective: 1000;
+        background-attachment: fixed;    
+    }
+    
+    @keyframes flicker {
+        0% {background-image: url("./images/TVstatic.png");}
+        100% {background-image: url("./images/TVstatic2.png");}
+    }        
+
 }
