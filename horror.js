@@ -7,7 +7,7 @@ const searchFunction = function() {
     let url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&offset=3&limit=100&q="horror"`
 
     axios.get(url).then(res =>  {
-        // console.log(res.data.data[0].images.original_still.url)
+
         const TVbackgrounds = [
             "url('./images/TVtwo.png')", 
             "url('./images/TVone2.png')", 
@@ -69,7 +69,7 @@ const searchFunction = function() {
         
         
 
-        var vol = new Tone.Volume(-12).toMaster();
+        var vol = new Tone.Volume(-2).toMaster();
 
         var samples = new Tone.Players({
             "halloween": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hall.mp3",
@@ -225,7 +225,7 @@ const searchFunction = function() {
             
             allstatic()
     
-         }, 1 * 60 * 1000);
+         }, 70000);
         
     })  
 
