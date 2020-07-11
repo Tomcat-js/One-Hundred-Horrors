@@ -49,6 +49,10 @@ body {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+
     body {
         background-image: url("./images/TVstatic.png");
         background-size: 33%;
@@ -77,6 +81,11 @@ body {
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
+    
+    .TV {
+        padding-left: 5%;
+    }
+
 
     body {
         background-image: url("./images/TVstatic.png");
