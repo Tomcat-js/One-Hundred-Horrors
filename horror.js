@@ -94,7 +94,7 @@ const searchFunction = function() {
             "guitar": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/guitar.mp3",
             "helpMe": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/helpMe.mp3",
             "laugh": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/laugh.mp3",
-            "shimmers": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/shimmers.mp3",
+            "shimmers": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/shimmersNew.mp3",
             "squelch": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/squelch.mp3",
             "hummer": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/hummer.mp3",
             "lowBlubble": "https://cdn.jsdelivr.net/gh/Tomcat-js/oneHundredHorrors/samples/lowBlubble.mp3",
