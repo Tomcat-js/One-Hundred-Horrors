@@ -13,9 +13,6 @@ One hundred still images from horror movies are selected from a loop making http
 * Giphy API
 * Responsive design
 * Samples from freesound.org
-* Sound design and audio editing in Ableton Live
-
-### Key Challenges <hr /> 
-Working with web audio was a new experience and required a small amount of research and experimentation. Making the design responsive and keeping the correct proportions of the television backgrounds while in alignment with the gifs also required some detailed editing and adjusting. Finding, creating and manipulating appropriate audio samples to blend seamlessly with one another was also a challenge but for the most part was incredibly fun.      
+* Sound design and audio editing in Ableton Live    
 
 ![Pic](https://imgur.com/jwKXb7r.png)
